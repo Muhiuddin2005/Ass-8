@@ -1,0 +1,219 @@
+[
+  {
+    "image": "../public/TaskFlow.jpeg",
+    "title": "TaskFlow",
+    "companyName": "FlowTech Ltd",
+    "id": 1,
+    "description": "TaskFlow is a comprehensive productivity app designed to help users organize their daily tasks and manage time efficiently. Beyond just creating simple to-do lists, it provides smart scheduling features, priority tagging, and recurring task management. Users can break down complex projects into smaller actionable tasks, track their progress visually, and receive reminders that adapt to their work habits. A standout feature is the analytics dashboard, which gives insights into task completion rates, time spent on each activity, and productivity trends over weeks and months. Users can set goals, monitor streaks, and identify areas where efficiency can be improved. With a sleek, minimal interface and customizable themes, TaskFlow reduces cognitive load while maximizing focus. Notifications are subtle, ensuring users are reminded without being distracted. The app also integrates seamlessly with calendars, emails, and other productivity tools, making it a central hub for work and personal life management. It is perfect for professionals, students, and anyone seeking to transform their task management into a structured and effective routine.",
+    "size": 45,
+    "reviews": 1280,
+    "ratingAvg": 4.5,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 320 },
+      { "name": "5 star", "count": 705 }
+    ]
+  },
+  {
+    "image": "../public/FitBuddy.jpeg",
+    "title": "FitBuddy",
+    "companyName": "Wellness Works",
+    "id": 2,
+    "description": "FitBuddy is a comprehensive fitness and wellness app that goes beyond simple workout tracking. Users can plan their exercise routines, log meals, monitor calorie intake, and set personalized fitness goals. The app adapts to different fitness levels, offering beginner-friendly plans as well as advanced training regimes for athletes. One of its core strengths is its detailed progress tracking and analytics. Users can monitor metrics like calories burned, strength improvements, and body measurements over time. FitBuddy also includes gamified challenges, badges, and streak tracking to keep motivation high. The app offers guided video workouts, instructional demonstrations, and personalized tips to prevent injury and improve form. Additionally, FitBuddy provides holistic wellness features, including sleep tracking, mindfulness exercises, and hydration reminders. Its intuitive interface, motivational nudges, and data-driven insights make it ideal for anyone looking to build sustainable healthy habits and reach fitness goals efficiently.",
+    "size": 70,
+    "reviews": 2210,
+    "ratingAvg": 4.3,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 650 },
+      { "name": "5 star", "count": 1050 }
+    ]
+  },
+  {
+    "image": "../public/CloudSync.jpeg",
+    "title": "CloudSync",
+    "companyName": "CloudSync",
+    "id": 3,
+    "description": "CloudSync is a fast and minimalistic note-taking app that emphasizes cloud synchronization across all devices. Users can create, organize, and search notes instantly, ensuring that information is always accessible, whether on desktop, tablet, or smartphone. The app supports rich content, including text, images, checklists, and links, and allows users to tag and categorize notes for effortless retrieval. Its real-time sync ensures no data is ever lost, and offline access keeps work uninterrupted. A clean, distraction-free interface lets users focus entirely on writing or brainstorming. CloudSync also includes collaboration tools, allowing multiple users to contribute to shared notes in real-time. Advanced search and version history provide powerful ways to track changes and maintain organized knowledge bases. Perfect for students, professionals, or anyone who relies on note-taking, CloudSync combines simplicity, speed, and robust features to enhance productivity and organization.",
+    "size": 25,
+    "reviews": 980,
+    "ratingAvg": 4.7,
+    "downloads": 90000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 545 }
+    ]
+  },
+  {
+    "image": "../public/BudgetBee.jpeg",
+    "title": "BudgetBee",
+    "companyName": "SmartFinance Inc",
+    "id": 4,
+    "description": "BudgetBee is a personal finance app that transforms how users manage income, expenses, and savings goals. Beyond simple expense tracking, it provides detailed analytics, budgeting templates, and predictive insights to help users plan their finances intelligently. The app allows users to set monthly budgets, categorize spending, and visualize trends with intuitive charts and graphs. Users can create savings goals, monitor progress, and receive personalized tips to reduce unnecessary expenditures. A notification system gently reminds users of upcoming bills and overspending alerts. BudgetBee also offers features like bill scanning, automatic transaction imports from bank accounts, and secure data encryption. Gamified achievements for meeting saving goals make financial management engaging and motivating. Ideal for individuals or families, BudgetBee ensures users can take control of their finances with confidence and clarity.",
+    "size": 38,
+    "reviews": 1570,
+    "ratingAvg": 4.1,
+    "downloads": 45000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 270 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 660 }
+    ]
+  },
+  {
+    "image": "../public/Learnify Labs.jpeg",
+    "title": "LangLearn",
+    "companyName": "EduVerse",
+    "id": 5,
+    "description": "LangLearn is an AI-driven language learning app that makes mastering new languages engaging, interactive, and effective. Users receive personalized lessons, vocabulary exercises, and pronunciation guidance tailored to their skill level. The app integrates speaking, listening, reading, and writing practice into a single, adaptive learning experience. Gamified features such as streaks, badges, and challenges keep users motivated. Progress is tracked meticulously, showing areas of strength and improvement, and users can review past lessons to reinforce learning. LangLearn also includes cultural context lessons, conversation simulations, and AI-powered chatbots that let users practice real-life dialogues. Optional background audio, immersive storytelling, and quizzes help make learning fun and effective. Whether for travel, work, or personal growth, LangLearn ensures a comprehensive and engaging language learning journey.",
+    "size": 90,
+    "reviews": 3300,
+    "ratingAvg": 4.8,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 2440 }
+    ]
+  },
+  {
+    "image": "../public/PixelArt Studio.jpeg",
+    "title": "PhotoCraft",
+    "companyName": "PixelArt Studio",
+    "id": 6,
+    "description": "PhotoCraft is a creative photo editing app that combines powerful editing tools with intuitive usability. Users can apply filters, overlays, stickers, and text effects to transform photos effortlessly. Beyond simple adjustments like brightness and contrast, PhotoCraft includes advanced features such as layer editing, masking, and blending modes, allowing for professional-quality results. Users can create collages, combine multiple images, and export projects in high resolution. The app also offers guided tutorials, templates, and a community gallery for inspiration. Its minimal interface ensures that creativity is not hindered by complexity, while powerful tools allow users of all skill levels to create polished, visually appealing images. PhotoCraft is ideal for hobbyists, content creators, and anyone passionate about digital art and photography.",
+    "size": 110,
+    "reviews": 4200,
+    "ratingAvg": 4.4,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1300 },
+      { "name": "5 star", "count": 1950 }
+    ]
+  },
+  {
+    "image": "../public/CookEasy.jpeg",
+    "title": "CookEasy",
+    "companyName": "HomeChef Ltd",
+    "id": 7,
+    "description": "CookEasy is a comprehensive cooking app designed to guide users from beginner to master chef. It offers thousands of recipes with step-by-step instructions, nutritional information, and cooking tips. The app includes personalized meal plans, grocery lists, and voice-guided instructions to streamline the cooking process. Users can save favorite recipes, share them with friends, and explore trending dishes. CookEasy also allows filtering recipes by dietary restrictions, prep time, and cuisine type. A standout feature is the interactive cooking mode, which guides users through recipes in real-time. Gamified elements like achievement badges for trying new recipes keep users engaged. Whether cooking for family, friends, or solo, CookEasy makes culinary exploration fun, structured, and stress-free.",
+    "size": 85,
+    "reviews": 2100,
+    "ratingAvg": 4.6,
+    "downloads": 180000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1060 }
+    ]
+  },
+  {
+    "image": "../public/ExploreMore.png",
+    "title": "TravelMate",
+    "companyName": "ExploreMore",
+    "id": 8,
+    "description": "TravelMate is a travel planning app that helps users explore destinations, plan itineraries, and discover hidden gems. Users can create custom travel plans, track bookings, and share experiences with friends. The app integrates maps, reviews, and offline guides to provide a seamless travel experience. Users can explore attractions, restaurants, and accommodations, while AI-powered recommendations suggest activities tailored to preferences. TravelMate also includes budgeting tools, real-time updates, and collaborative itinerary planning. Social features let users share photos and travel tips, making it a community-driven platform. The app’s goal is to simplify travel planning while inspiring exploration and adventure.",
+    "size": 95,
+    "reviews": 2800,
+    "ratingAvg": 4.2,
+    "downloads": 160000,
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 170 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 850 },
+      { "name": "5 star", "count": 1240 }
+    ]
+  },
+  {
+    "image": "../public/EduVerse.jpeg",
+    "title": "StudyPro",
+    "companyName": "Learnify Labs",
+    "id": 9,
+    "description": "StudyPro is an educational app designed to enhance learning through flashcards, quizzes, and interactive study tools. Students can organize study material, track progress, and receive performance analytics to identify weak areas. The app supports spaced repetition, adaptive learning algorithms, and collaborative study groups. Users can create custom quizzes, track scores, and earn achievements for consistency. Notifications help maintain study routines, and visual dashboards summarize learning efficiency. StudyPro also integrates with various educational resources and supports multi-device synchronization. It is ideal for students preparing for exams, professionals upskilling, or anyone looking to learn systematically and efficiently.",
+    "size": 60,
+    "reviews": 1900,
+    "ratingAvg": 4.5,
+    "downloads": 100000,
+    "ratings": [
+      { "name": "1 star", "count": 75 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 580 },
+      { "name": "5 star", "count": 945 }
+    ]
+  },
+  {
+    "image": "../public/TuneTech.png",
+    "title": "Musicify",
+    "companyName": "TuneTech",
+    "id": 10,
+    "description": "Musicify is a music streaming and download app that delivers high-quality audio and a personalized listening experience. Users can create playlists, discover new tracks, and enjoy curated recommendations based on taste. The app supports offline downloads, cross-device syncing, and social sharing features. Advanced features include equalizers, mood-based playlists, and intelligent radio stations. Musicify also integrates lyrics, artist bios, and concert notifications for an immersive experience. Whether listening during work, exercise, or leisure, Musicify provides a seamless and engaging way to enjoy music. Its clean interface and intelligent recommendations make discovering and enjoying music effortless and fun.",
+    "size": 120,
+    "reviews": 8900,
+    "ratingAvg": 4.7,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 620 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 5920 }
+    ]
+  },
+  {
+    "image": "../public/CalmSpace.jpeg",
+    "title": "MindZen",
+    "companyName": "CalmSpace",
+    "id": 11,
+    "description": "MindZen is a meditation and mindfulness app designed to reduce stress, improve sleep, and enhance mental well-being. Users can follow guided meditations, breathing exercises, and daily mindfulness challenges. The app tracks progress over time, providing insights into patterns of stress, focus, and relaxation. Optional background sounds, ambient music, and timer settings help create a distraction-free environment. MindZen also includes motivational streaks and reminders to encourage daily practice. Whether for beginners or experienced meditators, MindZen offers structured programs, personalized routines, and an immersive experience that promotes calmness, focus, and emotional balance throughout the day.",
+    "size": 55,
+    "reviews": 3100,
+    "ratingAvg": 4.9,
+    "downloads": 220000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 45 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 2530 }
+    ]
+  },
+  {
+    "image": "../public/SecureVault.jpeg",
+    "title": "SecureVault",
+    "companyName": "CyberCore",
+    "id": 12,
+    "description": "SecureVault is a cybersecurity app focused on protecting passwords, personal data, and sensitive information. Users can store login credentials, secure notes, and other confidential data with top-level encryption. The app features biometric authentication, secure sharing options, and automated password generation to enhance security. Users can monitor data breach alerts, organize credentials by categories, and access information across devices securely. SecureVault also includes advanced tools like two-factor authentication integration, password strength analysis, and encrypted backup. Ideal for individuals and professionals, SecureVault ensures digital security and peace of mind in a simple and reliable package.",
+    "size": 50,
+    "reviews": 1750,
+    "ratingAvg": 4.3,
+    "downloads": 80000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 860 }
+    ]
+  }
+]
+
