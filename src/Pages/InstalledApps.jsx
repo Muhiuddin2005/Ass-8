@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 
 import { loadInstalledapps, removeFromInstalledapps } from '../utils/localStorage'
+import car1 from '../assets/icon-downloads.png'
+import car2 from '../assets/icon-ratings.png'
 
 const Installedapps = () => {
 
@@ -12,10 +14,10 @@ const Installedapps = () => {
 
 
   const sortedItem = (() => {
-    if (sortOrder === 'downloads-asc') {
-      return [...installedapps].sort((a, b) => a.downloads - b.downloads)
-    } else if (sortOrder === 'downloads-desc') {
-      return [...installedapps].sort((a, b) => b.downloads - a.downloads)
+    if (sortOrder === 'size-asc') {
+      return [...installedapps].sort((a, b) => a.size - b.size)
+    } else if (sortOrder === 'size-desc') {
+      return [...installedapps].sort((a, b) => b.size - a.size)
     } else {
       return installedapps
     }
@@ -29,11 +31,11 @@ const Installedapps = () => {
 
 
   return (
-    <div className='space-y-6'>
+    <div>
 
       <div className='flex justify-between items-center py-5'>
         <p className='font-bold text-2xl'>
-            ({sortedItem.length}) Apps Found.
+          ({sortedItem.length}) Apps Found.
         </p>
 
         <label className='form-control w-full max-w-xs'>
@@ -42,36 +44,47 @@ const Installedapps = () => {
             value={sortOrder}
             onChange={e => setSortOrder(e.target.value)}
           >
-            <option value='none'>Sort by downloads</option>
-            <option value='downloads-asc'>Low-&gt;High</option>
-            <option value='downloads-desc'>High-&gt;Low</option>
+            <option value='none'>Sort by size</option>
+            <option value='size-asc'>Low-&gt;High</option>
+            <option value='size-desc'>High-&gt;Low</option>
           </select>
         </label>
       </div>
 
 
-      <div className='space-y-3'>
+      <div className='w-full'>
         {sortedItem.map(app => (
-          <div key={app.id} className='card card-side bg-base-100 shadow border'>
-            <figure>
-              <img
-                className='w-35 h-25 object-cover'
-                src={app.image}
-                alt={app.title}
-              />
-            </figure>
-
-            <div className='card-body'>
-              <p className='card-title'>{app.title}</p>
-            </div>
-
-            <div className='flex gap-2 items-center '>
-              <button
-                onClick={() => handleUninstall(app.id)}
-                className='btn btn-outline'
-              >
-                Uninstall
-              </button>
+          <div key={app.id}>
+            <div className="flex flex-row justify-center items-center gap-[1.6rem] p-[1.6rem] rounded-[0.4rem] bg-[#FFFFFF] w-full">
+              <div className='flex'>
+                <div><img
+                  className='w-35 h-25'
+                  src={app.image}
+                  alt={app.title}
+                /></div>
+                <div className='flex flex-col'>
+                 <div><p className='card-title'>{app.title} : {app.companyName}</p></div>
+                 <div className='flex items-center justify-center'>
+                  <div className='flex flex-row justify-center items-center gap-2 px-[10px] py-[6px] rounded-[4px]'>
+                              <img src={car1} alt='downloads icon' />
+                              <span>{app.downloads}</span>
+                            </div>
+                  <div className='flex flex-row justify-center items-center gap-2 px-[10px] py-[6px] rounded-[4px]'>
+                              <img src={car2} alt='ratings icon' />
+                              <span>{app.ratingAvg}</span>
+                            </div>
+                  <div>{app.size} MB</div>
+                 </div>
+                </div>
+              </div>
+              <div>
+                <button
+                  onClick={() => handleUninstall(app.id)}
+                  className='rounded-[0.4rem] bg-[#00D390] flex flex-row justify-center items-center gap-[1rem] px-[1.6rem] py-[1.2rem]'
+                >
+                  Uninstall
+                </button>
+              </div>
             </div>
           </div>
         ))}

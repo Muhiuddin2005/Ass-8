@@ -29,7 +29,7 @@ const Home = () => {
         </div>
 
 
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-2'>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>
           {trendingApps.map(item => (
             <AppCard key={item.id} app={item} />
           ))}
