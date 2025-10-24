@@ -9,7 +9,6 @@ const Installedapps = () => {
   const [installedapps, setInstalledapps] = useState(() => loadInstalledapps())
   const [sortOrder, setSortOrder] = useState('none')
 
-
   if (!installedapps.length) return <p>No Data</p>
 
 
