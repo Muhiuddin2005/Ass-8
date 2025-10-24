@@ -11,7 +11,7 @@ const Header = () => {
                     <span className="capitalize text-[4.5rem] font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"> Productive </span>Apps
                 </div>
                 <div className="text-[rgba(98,115,130,1)] font-inter text-[1.25rem] font-normal leading-[2rem] tracking-[0%] text-center">
-                    At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.
+                    At HERO.IO , we craft innovative apps designed to make <br /> everyday life simpler, smarter, and more exciting.Our goal is to <br /> turn your ideas into digital experiences that truly make an impact.
                 </div>
                 <div className='flex'>
                     <a target="_blank" href='https://play.google.com/store/apps?hl=en' className="cursor-pointer box-border border border-[rgba(210,210,210,1)] rounded-[0.25rem] flex flex-row justify-center items-center gap-[0.625rem] px-[1.5rem] py-[0.75rem] mr-2"
