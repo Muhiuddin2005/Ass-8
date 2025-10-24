@@ -5,6 +5,7 @@ import { updateList } from '../utils/localStorage'
 import down from "../assets/icon-downloads.png"
 import rating from "../assets/icon-ratings.png"
 import review from "../assets/icon-review.png"
+import { BarChart, Bar, XAxis, YAxis} from 'recharts';
 
 
 const AppDetails = () => {
@@ -16,7 +17,11 @@ const AppDetails = () => {
 
   if (loading) return <p>Loading.......</p>
 
-  const { image, description, companyName, ratingAvg, downloads, reviews, title } = app || {}
+  const { image, description, companyName, ratingAvg, downloads, reviews, title,ratings } = app || {}
+  const data = ratings.map(r => ({
+    star: r.name,
+    reviews: r.count
+  }))
 
   return (
     <div className='flex flex-col justify-start items-start gap-[2.5rem] p-[5rem]'>
@@ -81,9 +86,17 @@ const AppDetails = () => {
               Install now
             </p>
           </div>
-
-        </div>
+          
+          </div>
       </div>
+<BarChart className='w-full'
+  data={data}
+  layout="vertical"
+  style={{ width: '100%', maxWidth: '100%', height: '300px'}}>
+  <XAxis type="number"/>
+  <YAxis type="category" dataKey="star"/>
+  <Bar dataKey="reviews" fill="#FF8811"/>
+</BarChart>
 
       <div>
         <p className='font-inter text-[1.25rem] font-bold leading-[2rem] text-left pb-4'>Description</p>
