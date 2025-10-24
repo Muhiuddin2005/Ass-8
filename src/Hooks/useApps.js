@@ -11,7 +11,7 @@ const useApps = () => {
     const fetchData = async () => {
       try {
         setLoading(true)
-        const response = await axios('../apps.json')
+        const response = await axios('/apps.json')
         setApps(response.data)
       } 
       catch (err) {

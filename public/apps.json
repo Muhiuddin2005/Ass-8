@@ -1,6 +1,6 @@
 [
   {
-    "image": "../public/TaskFlow.jpeg",
+    "image": "/TaskFlow.jpeg",
     "title": "TaskFlow",
     "companyName": "FlowTech Ltd",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "../public/FitBuddy.jpeg",
+    "image": "/FitBuddy.jpeg",
     "title": "FitBuddy",
     "companyName": "Wellness Works",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "../public/CloudSync.jpeg",
+    "image": "/CloudSync.jpeg",
     "title": "CloudSync",
     "companyName": "CloudSync",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "../public/BudgetBee.jpeg",
+    "image": "/BudgetBee.jpeg",
     "title": "BudgetBee",
     "companyName": "SmartFinance Inc",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "../public/Learnify Labs.jpeg",
+    "image": "/Learnify Labs.jpeg",
     "title": "LangLearn",
     "companyName": "EduVerse",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "../public/PixelArt Studio.jpeg",
+    "image": "/PixelArt Studio.jpeg",
     "title": "PhotoCraft",
     "companyName": "PixelArt Studio",
     "id": 6,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "../public/CookEasy.jpeg",
+    "image": "/CookEasy.jpeg",
     "title": "CookEasy",
     "companyName": "HomeChef Ltd",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "../public/ExploreMore.png",
+    "image": "/ExploreMore.png",
     "title": "TravelMate",
     "companyName": "ExploreMore",
     "id": 8,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "../public/EduVerse.jpeg",
+    "image": "/EduVerse.jpeg",
     "title": "StudyPro",
     "companyName": "Learnify Labs",
     "id": 9,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "../public/TuneTech.png",
+    "image": "/TuneTech.png",
     "title": "Musicify",
     "companyName": "TuneTech",
     "id": 10,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "../public/CalmSpace.jpeg",
+    "image": "/CalmSpace.jpeg",
     "title": "MindZen",
     "companyName": "CalmSpace",
     "id": 11,
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "../public/SecureVault.jpeg",
+    "image": "/SecureVault.jpeg",
     "title": "SecureVault",
     "companyName": "CyberCore",
     "id": 12,
