@@ -32,10 +32,10 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <div className='rounded-[4px] w-[145px] h-[43px] flex flex-row justify-center items-center gap-[10px] px-[16px] py-[12px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>
+    <Link to='https://github.com/Muhiuddin2005' className='rounded-[4px] w-[145px] h-[43px] flex flex-row justify-center items-center gap-[10px] px-[16px] py-[12px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>
       <img className='w-1/5' src={icon} alt="" />
       <a> Contribute</a> 
-    </div>
+    </Link>
     </div>
 </div> 
     );

@@ -5,11 +5,10 @@ import err from '../assets/App-Error.png'
 
 
 const Apps = () => {
-  const {apps } = useApps()
+  const {apps} = useApps()
   const [search, setSearch] = useState('')
 
   const term = search.trim().toLocaleLowerCase()
-
   const searchedApps = term
     ? apps.filter(a => a.title.toLocaleLowerCase().includes(term))
     : apps

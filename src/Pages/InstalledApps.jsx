@@ -3,13 +3,14 @@ import React, { useState } from 'react'
 import { loadInstalledapps, removeFromInstalledapps } from '../utils/localStorage'
 import car1 from '../assets/icon-downloads.png'
 import car2 from '../assets/icon-ratings.png'
+import { toast } from 'react-toastify'
 
 const Installedapps = () => {
 
   const [installedapps, setInstalledapps] = useState(() => loadInstalledapps())
   const [sortOrder, setSortOrder] = useState('none')
 
-  if (!installedapps.length) return <p>No Data</p>
+  if (!installedapps.length) return <div className='flex items-center justify-center mt-30'>No App Installed</div>
 
 
   const sortedItem = (() => {
@@ -26,6 +27,7 @@ const Installedapps = () => {
   const handleUninstall = id => {
     removeFromInstalledapps(id)
     setInstalledapps(prev => prev.filter(p => p.id !== id))
+    toast.success("App uninstalled!")
   }
 
 
@@ -79,7 +81,7 @@ const Installedapps = () => {
               <div>
                 <button
                   onClick={() => handleUninstall(app.id)}
-                  className='rounded-[0.4rem] bg-[#00D390] flex flex-row justify-center items-center gap-[1rem] px-[1.6rem] py-[1.2rem]'
+                  className='cursor-pointer rounded-[0.4rem] bg-[#00D390] flex flex-row justify-center items-center gap-[1rem] px-[1.6rem] py-[1.2rem]'
                 >
                   Uninstall
                 </button>

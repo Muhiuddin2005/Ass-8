@@ -1,5 +1,7 @@
 import React from 'react';
 import mob from '../assets/hero.png'
+import app from '../assets/fi_5977575.png'
+import play from '../assets/fi_16076057.png'
 
 const Header = () => {
     return (
@@ -12,16 +14,16 @@ const Header = () => {
                     At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.
                 </div>
                 <div className='flex'>
-                    <div className="box-border border border-[rgba(210,210,210,1)] rounded-[0.25rem] flex flex-row justify-center items-center gap-[0.625rem] px-[1.5rem] py-[0.75rem] mr-2"
+                    <a target="_blank" href='https://play.google.com/store/apps?hl=en' className="cursor-pointer box-border border border-[rgba(210,210,210,1)] rounded-[0.25rem] flex flex-row justify-center items-center gap-[0.625rem] px-[1.5rem] py-[0.75rem] mr-2"
                     >
-                        <div>icon</div>
-                        <div>store</div>
-                    </div>
-                    <div className="box-border border border-[rgba(210,210,210,1)] rounded-[0.25rem] flex flex-row justify-center items-center gap-[0.625rem] px-[1.5rem] py-[0.75rem] ml-2"
+                        <div><img src={play} alt="" /></div>
+                        <div>Google Play</div>
+                    </a>
+                    <a target="_blank" href='https://www.apple.com/app-store/' className="cursor-pointer box-border border border-[rgba(210,210,210,1)] rounded-[0.25rem] flex flex-row justify-center items-center gap-[0.625rem] px-[1.5rem] py-[0.75rem] ml-2"
                     >
-                        <div>icon</div>
-                        <div>store</div>
-                    </div>
+                        <div><img src={app}/></div>
+                        <div>App Store</div>
+                    </a>
 
                 </div>
                 <div className="">

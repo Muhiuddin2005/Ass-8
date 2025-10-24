@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router'
 import useApps from '../Hooks/useApps'
 import { updateList } from '../utils/localStorage'
@@ -6,22 +6,29 @@ import down from "../assets/icon-downloads.png"
 import rating from "../assets/icon-ratings.png"
 import review from "../assets/icon-review.png"
 import { BarChart, Bar, XAxis, YAxis} from 'recharts';
+import Spinner from '../Components/Spinner'
 
 
 const AppDetails = () => {
 
+const [installed, setInstalled] = useState(false);
   const { id } = useParams()
   const { apps, loading } = useApps()
 
   const app = apps.find(p => p.id === Number(id))
 
-  if (loading) return <p>Loading.......</p>
+  if (loading) return <Spinner/>
 
   const { image, description, companyName, ratingAvg, downloads, reviews, title,ratings } = app || {}
   const data = ratings.map(r => ({
     star: r.name,
     reviews: r.count
   }))
+  
+   const handleInstall = () => {
+    setInstalled(true);
+    updateList(app);
+  };
 
   return (
     <div className='flex flex-col justify-start items-start gap-[2.5rem] p-[5rem]'>
@@ -79,11 +86,14 @@ const AppDetails = () => {
           </div>
 
           <div
-            onClick={() => updateList(app)}
-            className='cursor-pointer flex flex-row justify-center items-center gap-[0.625rem] px-[1.25rem] py-[0.875rem] rounded-[0.25rem] bg-[rgba(0,211,144,1)]'
+            onClick={handleInstall}
+            disabled={installed}
+            className={`cursor-pointer flex flex-row justify-center items-center gap-[0.625rem] px-[1.25rem] py-[0.875rem] rounded-[0.25rem] ${installed 
+            ? "bg-gray-400 cursor-not-allowed" 
+            : "bg-[rgba(0,211,144,1)]"}`}
           >
             <p className='text-[rgba(255,255,255,1)] font-inter text-[1.25rem] font-semibold leading-[100%] text-left '>
-              Install now
+              {installed ? "Installed" : "Install now"}
             </p>
           </div>
           
