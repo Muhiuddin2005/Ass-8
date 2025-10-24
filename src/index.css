@@ -1,2 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+a.active {
+  @apply underline bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent;
+}
+

@@ -2,6 +2,10 @@ import React from 'react'
 import { useParams } from 'react-router'
 import useApps from '../Hooks/useApps'
 import { updateList } from '../utils/localStorage'
+import down from "../assets/icon-downloads.png"
+import rating from "../assets/icon-ratings.png"
+import review from "../assets/icon-review.png"
+
 
 const AppDetails = () => {
 
@@ -12,7 +16,7 @@ const AppDetails = () => {
 
   if (loading) return <p>Loading.......</p>
 
-  const {image, description } = app || {}
+  const { image, description, companyName, ratingAvg, downloads, reviews, title } = app || {}
 
   return (
     <div className='flex flex-col justify-start items-start gap-[2.5rem] p-[5rem]'>
@@ -27,44 +31,44 @@ const AppDetails = () => {
         <div className='flex flex-col justify-start items-start gap-[1.875rem]'>
 
           <div className='flex flex-col justify-start items-start gap-[0.5rem]'>
-            <p className='text-[rgba(0,25,49,1)] font-inter text-[2rem] font-bold leading-[100%] text-left capitalize'>
-              SmPlan: ToDo List with Reminder
+            <p className='text-[rgba(0,25,49,1)] font-inter text-[2rem] font-bold leading-[100%] text-left '>
+              {title}
             </p>
 
             <p className='font-inter text-[1.25rem] font-bold leading-[2rem] text-left'>
-              Developed by productive.io
+              Developed by <span className='text-blue-600'>{companyName}</span>
             </p>
           </div>
 
           <div className='flex flex-row justify-start items-center gap-[1.5rem]'>
 
             <div className='flex flex-col justify-center items-start gap-[0.5rem]'>
-              <img src='' alt='down' />
-              <p className='text-[rgba(0,25,49,1)] font-inter text-[1rem] font-normal leading-[1.5rem] text-left capitalize opacity-[0.8]'>
-                downloads
+              <img src={down} alt='down' />
+              <p className='text-[rgba(0,25,49,1)] font-inter text-[1rem] font-normal leading-[1.5rem] text-left  opacity-[0.8]'>
+                Downloads
               </p>
-              <p className='text-[rgba(0,25,49,1)] font-inter text-[2.5rem] font-extrabold leading-[2.5rem] text-left capitalize'>
-                8M
-              </p>
-            </div>
-
-            <div className='flex flex-col justify-center items-start gap-[0.5rem]'>
-              <img src='' alt='down' />
-              <p className='text-[rgba(0,25,49,1)] font-inter text-[1rem] font-normal leading-[1.5rem] text-left capitalize opacity-[0.8]'>
-                downloads
-              </p>
-              <p className='text-[rgba(0,25,49,1)] font-inter text-[2.5rem] font-extrabold leading-[2.5rem] text-left capitalize'>
-                8M
+              <p className='text-[rgba(0,25,49,1)] font-inter text-[2.5rem] font-extrabold leading-[2.5rem] text-left '>
+                {downloads}
               </p>
             </div>
 
             <div className='flex flex-col justify-center items-start gap-[0.5rem]'>
-              <img src='' alt='down' />
-              <p className='text-[rgba(0,25,49,1)] font-inter text-[1rem] font-normal leading-[1.5rem] text-left capitalize opacity-[0.8]'>
-                downloads
+              <img src={rating} alt='down' />
+              <p className='text-[rgba(0,25,49,1)] font-inter text-[1rem] font-normal leading-[1.5rem] text-left  opacity-[0.8]'>
+                Average Ratings
               </p>
-              <p className='text-[rgba(0,25,49,1)] font-inter text-[2.5rem] font-extrabold leading-[2.5rem] text-left capitalize'>
-                8M
+              <p className='text-[rgba(0,25,49,1)] font-inter text-[2.5rem] font-extrabold leading-[2.5rem] text-left '>
+                {ratingAvg}
+              </p>
+            </div>
+
+            <div className='flex flex-col justify-center items-start gap-[0.5rem]'>
+              <img src={review} alt='down' />
+              <p className='text-[rgba(0,25,49,1)] font-inter text-[1rem] font-normal leading-[1.5rem] text-left  opacity-[0.8]'>
+                Total Reviews
+              </p>
+              <p className='text-[rgba(0,25,49,1)] font-inter text-[2.5rem] font-extrabold leading-[2.5rem] text-left '>
+                {reviews}
               </p>
             </div>
           </div>
@@ -73,7 +77,7 @@ const AppDetails = () => {
             onClick={() => updateList(app)}
             className='cursor-pointer flex flex-row justify-center items-center gap-[0.625rem] px-[1.25rem] py-[0.875rem] rounded-[0.25rem] bg-[rgba(0,211,144,1)]'
           >
-            <p className='text-[rgba(255,255,255,1)] font-inter text-[1.25rem] font-semibold leading-[100%] text-left capitalize'>
+            <p className='text-[rgba(255,255,255,1)] font-inter text-[1.25rem] font-semibold leading-[100%] text-left '>
               Install now
             </p>
           </div>
@@ -82,8 +86,8 @@ const AppDetails = () => {
       </div>
 
       <div>
-        <p>Desc.</p>
-        <p>{description}</p>
+        <p className='font-inter text-[1.25rem] font-bold leading-[2rem] text-left pb-4'>Description</p>
+        <p className='text-[rgba(0,25,49,1)] font-inter text-[1.3rem] font-normal leading-[1.5rem] text-left  opacity-[0.8]'>{description}</p>
       </div>
     </div>
   )
